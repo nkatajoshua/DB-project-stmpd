@@ -1,0 +1,6 @@
+This is database containing tracks released under STMPD rcrds so far in the year of 2022
+Imports data from csv into database where STMPD tracks are connected to their respective tables e.g artist table, album table etc
+In the database all the entries are connceted to each other and the database cotains the artists,their tracks and their albums
+
+The database joins all the tables under the use of the ids hence each field with its respective data 
+The program inserts data into tables and also creates the database file of the data and imports the csv file which used for data importing

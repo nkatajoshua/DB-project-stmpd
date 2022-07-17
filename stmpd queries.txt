@@ -1,0 +1,22 @@
+#Concatenating queries :
+  SELECT track_name FROM tracks WHERE Track_id IN (SELECT Track2_id FROM releases WHERE Album2_id IN (SELECT Album_id FROM albums WHERE album_name LIKE "%Drift%"));
+
+#Showing fields in tracks query :
+  SELECT * FROM tracks;
+
+#Count query:
+    SELECT COUNT(track_name) FROM tracks;
+
+#Joining queries:
+    SELECT DISTINCT track_name FROM tracks
+    JOIN releases ON releases.Track2_id=tracks.Track_id
+    JOIN artists ON artists.Artist_id=releases.Artist2_id
+    WHERE artist_name LIKE "%Vluarr%";
+
+    SELECT DISTINCT artist_name FROM artists
+    JOIN releases ON releases.Artist2_id=artists.Artist_id
+    JOIN albums ON albums.Album_id=releases.Album2_id
+    WHERE album_name LIKE "%Rav Appeal%";
+
+
+
