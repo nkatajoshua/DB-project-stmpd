@@ -1,3 +1,3 @@
 # PROJECTSTMPD
 
-This is my database project
+This is my database project for database design application course
